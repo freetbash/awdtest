@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  ubuntu-ssh-4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-ssh-container-4
+    ports:
+      - "2201:22"  # 将容器1的 SSH 服务映射到主机的2201端口
+      - "8001:80"
+
+  ubuntu-ssh-5:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-ssh-container-5
+    ports:
+      - "2202:22"  # 将容器2的 SSH 服务映射到主机的2202端口
+      - "8002:80"
+
+  ubuntu-ssh-6:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-ssh-container-6
+    ports:
+      - "2203:22"  # 将容器3的 SSH 服务映射到主机的2203端口
+      - "8003:80"
