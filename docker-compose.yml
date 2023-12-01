@@ -1,0 +1,30 @@
+version: "3"
+
+
+services:
+  awd-target-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: awd-target-1
+    ports:
+      - "2201:22"
+      - "8001:80"
+
+  awd-target-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: awd-target-2
+    ports:
+      - "2201:22"
+      - "8001:80"
+
+  awd-target-3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: awd-target-3
+    ports:
+      - "2201:22"
+      - "8001:80"
